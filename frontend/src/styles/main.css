@@ -1,1 +1,12 @@
-/* @import "./navbar.css"; */
+@import "./footer.css";
+@import "./navbar.css";
+
+.App {
+  text-align: center;
+  position: relative;
+  min-height: 100vh;
+}
+
+.main-content {
+  padding-bottom: 30px;
+}

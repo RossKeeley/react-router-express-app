@@ -1,20 +1,29 @@
+import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Home from './components/Home';
+import Profile from './components/Profile';
 import About from './components/About';
 import Contact from './components/Contact';
-import './App.css';
+import './styles/main.css';
 
 function App() {
+  const [profile, setProfile] = useState("");
 
   return (
     <div className="App">
       <Navbar />
-      <Routes>
-        <Route path="/" element={ <Home /> }></Route>
-        <Route path="/about" element={ <About /> }></Route>
-        <Route path="/contact" element={ <Contact /> }></Route>
-      </Routes>
+      <div className="main-content">
+        <Routes>
+          <Route path="/" element={ <Home setProfile={setProfile} /> }>
+          </Route>
+            <Route path=":username" element={ <Profile /> }></Route>
+          <Route path="/about" element={ <About /> }></Route>
+          <Route path="/contact" element={ <Contact /> }></Route>
+        </Routes>
+      </div>
+      <Footer />
     </div>
   );
 }

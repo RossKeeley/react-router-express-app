@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Home from './components/Home';
+import About from './components/About';
+import Contact from './components/Contact';
 import './App.css';
 
 function App() {
-  const [data, setData] = useState(null);
-
-  useEffect(() => {
-    fetch("/api")
-      .then((res) => res.json())
-      .then((data) => setData(data.message));
-  });
 
   return (
     <div className="App">
-      Hello World
-      <p>{!data ? "Loading..." : data}</p>
+      <Routes>
+        <Route path="/" element={ <Home /> }></Route>
+        <Route path="/about" element={ <About /> }></Route>
+        <Route path="/contact" element={ <Contact /> }></Route>
+      </Routes>
     </div>
   );
 }

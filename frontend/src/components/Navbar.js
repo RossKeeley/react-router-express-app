@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="navbar__logo">
         <img className="navbar__logo-image" src="#" alt="" />
         <h1 className="navbar__logo-title">
-          <Link className="navbar__logo-title-link" to="/">grow</Link>
+          <Link className="navbar__logo-title-link" to="/">TBD</Link>
         </h1>
       </div>
       <div className="navbar__searchbar-container">

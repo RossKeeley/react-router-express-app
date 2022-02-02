@@ -1,7 +1,7 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  height: 70px;
+  height: 60px;
   padding: 0 15px;
   background: #34eb7d;
 }
@@ -23,7 +23,7 @@
 
 .navbar__logo-title-link {
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
 }
 
 .navbar__searchbar-container {

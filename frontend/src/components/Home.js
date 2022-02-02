@@ -5,7 +5,7 @@ const Home = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch("/")
+    fetch("/home")
       .then((res) => res.json())
       .then((data) => setData(data.message));
   });

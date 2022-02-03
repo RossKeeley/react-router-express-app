@@ -1,7 +1,7 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
 
-const Profile = (profile) => {
+const Profile = ({ profile }) => {
   
   return (
     <div className="profile">

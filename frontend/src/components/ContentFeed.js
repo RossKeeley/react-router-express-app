@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import "../styles/content-feed.css";
 
-const ContentFeed = (setProfile) => {
+const ContentFeed = ({ setProfile }) => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -13,21 +13,25 @@ const ContentFeed = (setProfile) => {
   console.log(data);
   return (
     <div className="content-feed">
-      {(data || []).map((post) => (
+      {(data.reverse() || []).map((post) => (
         <div className="content-feed__post">
           <div className="content-feed__post-header">
-            {/* <Link className="post-header__image-link" to={post.forename + post.surname}> */}
+            <Link className="post-header__image-link" to={post.forename + post.surname}  onClick={setProfile(post.forename + " " + post.surname)}>
               <img className="post-header__image" src={post.profileImage} alt="" />
-            {/* </Link> */}
-            <Link className="post-header__text-link" to={post.forename + post.surname} >
-              <h4 className="post-header__name">{post.forename + " " + post.surname}</h4>
             </Link>
+              <h4 className="post-header__name">
+                <Link className="post-header__name-link" to={post.forename + post.surname} onClick={setProfile(post.forename + " " + post.surname)}>
+                  {post.forename + " " + post.surname}
+                </Link>
+              </h4>
           </div>
           <div className="content-feed__post-body">
             <p className="post-body__text">{post.text}</p>
-            {post.image !== "" && (
-              <img src={post.image} alt="" />
-            )}
+            {/* {post.image !== "" &&  */}
+              {(post.image || []).map((image) => (
+                <img className="post-body__image" src={image} alt="" />
+              ))}
+            {/* } */}
           </div>
         </div>
       ))}

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import ContentFeed from './ContentFeed';
 
-const Home = () => {
+const Home = ({ setProfile }) => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
@@ -17,7 +17,7 @@ const Home = () => {
       <p>{!data ? "Loading..." : data}</p>
       <Link to="about">Click to view the about page</Link>
       <Link to="contact">Click to view the contact page</Link>
-      <ContentFeed />
+      <ContentFeed setProfile={setProfile} />
     </div>
   );
 };

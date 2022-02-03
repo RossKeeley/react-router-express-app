@@ -22,6 +22,7 @@ const data = [
   {
     forename: "ross",
     surname: "keeley",
+    profileImage: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     text: "This is the text of a post",
     image: [],
   },
@@ -35,6 +36,14 @@ const data = [
   {
     forename: "ross",
     surname: "keeley",
+    profileImage: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
+    text: "This is the text of a post",
+    image: ["https://pbs.twimg.com/profile_images/1342768807891378178/8le-DzgC_400x400.jpg"],
+  },
+  {
+    forename: "ross",
+    surname: "keeley",
+    profileImage: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     text: "This is the text of a post",
     image: ["https://pbs.twimg.com/profile_images/1342768807891378178/8le-DzgC_400x400.jpg"],
   },
@@ -55,6 +64,7 @@ const data = [
   {
     forename: "ross",
     surname: "keeley",
+    profileImage: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     text: "This is the text of a post",
     image: ["https://pbs.twimg.com/profile_images/1342768807891378178/8le-DzgC_400x400.jpg"],
   },
@@ -68,38 +78,37 @@ const data = [
   {
     forename: "ross",
     surname: "keeley",
-    text: "This is the text of a post",
-    image: ["https://pbs.twimg.com/profile_images/1342768807891378178/8le-DzgC_400x400.jpg"],
-  },
-  {
-    forename: "ross",
-    surname: "keeley",
+    profileImage: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     text: "This is the text of a post",
     image: [],
   },
   {
     forename: "ross",
     surname: "keeley",
+    profileImage: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     text: "This is the text of a post",
     image: ["https://pbs.twimg.com/profile_images/1342768807891378178/8le-DzgC_400x400.jpg"],
   },
   {
     forename: "ross",
     surname: "keeley",
-    text: "This is the text of a post",
-    image: ["https://pbs.twimg.com/profile_images/1342768807891378178/8le-DzgC_400x400.jpg"],
-  },
-  {
-    forename: "ross",
-    surname: "keeley",
-    text: "This is the text of a post",
-    image: ["https://pbs.twimg.com/profile_images/1342768807891378178/8le-DzgC_400x400.jpg"],
-  },
-  {
-    forename: "ross",
-    surname: "keeley",
+    profileImage: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     text: "This is the text of a post",
     image: ["https://pbs.twimg.com/profile_images/1342768807891378178/8le-DzgC_400x400.jpg", "https://pbs.twimg.com/profile_images/1342768807891378178/8le-DzgC_400x400.jpg", "https://pbs.twimg.com/profile_images/1342768807891378178/8le-DzgC_400x400.jpg", "https://pbs.twimg.com/profile_images/1342768807891378178/8le-DzgC_400x400.jpg"],
+  },
+  {
+    forename: "ross",
+    surname: "keeley",
+    profileImage: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
+    text: "",
+    image: [],
+  },
+  {
+    forename: "ross",
+    surname: "keeley",
+    profileImage: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
+    text: "This is the text of a post",
+    image: ["https://pbs.twimg.com/profile_images/1342768807891378178/8le-DzgC_400x400.jpg"],
   }
 ];
 

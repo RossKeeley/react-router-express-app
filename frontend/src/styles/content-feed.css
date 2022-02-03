@@ -12,7 +12,8 @@
 .content-feed__post-header {
   display: flex;
   align-items: center;
-  padding: 5px;
+  padding: 10px;
+  height: 30px;
 }
 
 .post-header__image {
@@ -26,6 +27,10 @@
   text-decoration: none;
   text-transform: capitalize;
   color: #000000;
+}
+
+.post-body__text {
+  text-align: start;
 }
 
 .post-body__image {

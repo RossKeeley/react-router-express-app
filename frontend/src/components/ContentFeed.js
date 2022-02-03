@@ -26,7 +26,9 @@ const ContentFeed = ({ setProfile }) => {
               </h4>
           </div>
           <div className="content-feed__post-body">
-            <p className="post-body__text">{post.text}</p>
+            {post.text !== "" && (
+              <p className="post-body__text">{post.text}</p>
+            )}
             {/* {post.image !== "" &&  */}
               {(post.image || []).map((image) => (
                 <img className="post-body__image" src={image} alt="" />

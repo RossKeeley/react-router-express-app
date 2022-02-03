@@ -15,8 +15,6 @@ const Home = ({ setProfile }) => {
     <div>
       <h1>This is the Home page</h1>
       <p>{!data ? "Loading..." : data}</p>
-      <Link to="about">Click to view the about page</Link>
-      <Link to="contact">Click to view the contact page</Link>
       <ContentFeed setProfile={setProfile} />
     </div>
   );

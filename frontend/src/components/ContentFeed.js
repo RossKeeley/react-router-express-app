@@ -16,11 +16,11 @@ const ContentFeed = ({ setProfile }) => {
       {(data.reverse() || []).map((post) => (
         <div className="content-feed__post">
           <div className="content-feed__post-header">
-            <Link className="post-header__image-link" to={post.forename + post.surname}  onClick={setProfile(post.forename + " " + post.surname)}>
+            <Link className="post-header__image-link" to={`/users/${post.forename + post.surname}`}  onClick={setProfile(post.forename + " " + post.surname)}>
               <img className="post-header__image" src={post.profileImage} alt="" />
             </Link>
               <h4 className="post-header__name">
-                <Link className="post-header__name-link" to={post.forename + post.surname} onClick={setProfile(post.forename + " " + post.surname)}>
+                <Link className="post-header__name-link" to={`/users/${post.forename + post.surname}`} onClick={setProfile(post.forename + " " + post.surname)}>
                   {post.forename + " " + post.surname}
                 </Link>
               </h4>

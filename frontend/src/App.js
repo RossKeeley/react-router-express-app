@@ -18,7 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={ <Home setProfile={setProfile} /> }>
           </Route>
-            <Route path=":username" element={ <Profile profile={profile} /> }></Route>
+            <Route path="/users/:username" element={ <Profile profile={profile} /> }></Route>
           <Route path="/about" element={ <About /> }></Route>
           <Route path="/contact" element={ <Contact /> }></Route>
         </Routes>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import "../styles/content-feed.css";
+import ImageAccordion from './ImageAccordion';
 
 const ContentFeed = ({ setProfile }) => {
   const [data, setData] = useState([]);
@@ -30,11 +31,12 @@ const ContentFeed = ({ setProfile }) => {
               <p className="post-body__text">{post.text}</p>
             )}
             {/* {post.image !== "" &&  */}
-              {(post.image || []).map((image) => (
+              {/* {(post.image || []).map((image) => (
                 <img className="post-body__image" src={image} alt="" />
-              ))}
+              ))} */}
             {/* } */}
           </div>
+          <ImageAccordion images={post.image} />
         </div>
       ))}
     </div>

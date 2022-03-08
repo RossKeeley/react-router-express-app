@@ -117,9 +117,9 @@ const data = [
     text: "This is the text of a post",
     image: [
       "https://pbs.twimg.com/profile_images/1342768807891378178/8le-DzgC_400x400.jpg", 
-      "https://pbs.twimg.com/profile_images/1342768807891378178/8le-DzgC_400x400.jpg", 
-      "https://pbs.twimg.com/profile_images/1342768807891378178/8le-DzgC_400x400.jpg", 
-      "https://pbs.twimg.com/profile_images/1342768807891378178/8le-DzgC_400x400.jpg"
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqnioaaoK8nV0KBbjmsxj4AtGpo3i7lwmGbg&usqp=CAU", 
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDBrCo3T6TuNgUUya1cY5CDJZ0I9WKnfr4mA&usqp=CAU", 
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmJDYmlUL8nhxpNHlNTfEwzq_qn34kcSeTpg&usqp=CAU"
     ]
   }
 ];

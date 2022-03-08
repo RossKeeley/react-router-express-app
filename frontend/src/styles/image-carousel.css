@@ -1,13 +1,15 @@
-.image-accordion__list {
+.image-carousel__list {
   position: relative;
   list-style: none;
   padding-left: 0;
   overflow: hidden;
+  display: flex;
+  align-items: center;
   /* height: 500px; */
 }
 
-.image-accordion__previous-button,
-.image-accordion__next-button {
+.image-carousel__previous-button,
+.image-carousel__next-button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -17,24 +19,27 @@
   border: none;
 }
 
-.image-accordion__previous-button {
+.image-carousel__previous-button {
   left: 20px;
 }
 
-.image-accordion__next-button {
+.image-carousel__next-button {
   right: 20px;
 }
 
-.image-accordion__list-item {
-  /* width: 100%; */
+.image-carousel__list-item {
+  width: 100%;
+  min-width: 100%;
   white-space: nowrap;
-  /* display: flex; */
-  /* align-items: center; */
   transition: transform 0.3s;
-  /* justify-content: center; */
+  display: none;
 }
 
-.image-accordion__list-image {
+.item-showing {
+  display: unset;
+}
+
+.image-carousel__list-image {
   width: 100%;
   display: inline-flex; 
   align-items: center;

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import "../styles/content-feed.css";
-import ImageAccordion from './ImageAccordion';
+import ImageCarousel from './ImageCarousel';
 
 const ContentFeed = ({ setProfile }) => {
   const [data, setData] = useState([]);
@@ -10,18 +10,30 @@ const ContentFeed = ({ setProfile }) => {
     fetch("/content-feed")
       .then((res) => res.json())
       .then((data) => setData(data));
-  });
+  }, []);
   console.log(data);
   return (
     <div className="content-feed">
       {(data.reverse() || []).map((post) => (
         <div className="content-feed__post">
           <div className="content-feed__post-header">
-            <Link className="post-header__image-link" to={`/users/${post.forename + post.surname}`}  onClick={setProfile(post.forename + " " + post.surname)}>
+            <Link 
+              className="post-header__image-link" 
+              to={`/users/${post.forename + post.surname}`}  
+              onClick={
+                setProfile(post.forename + " " + post.surname)
+              }
+            >
               <img className="post-header__image" src={post.profileImage} alt="" />
             </Link>
               <h4 className="post-header__name">
-                <Link className="post-header__name-link" to={`/users/${post.forename + post.surname}`} onClick={setProfile(post.forename + " " + post.surname)}>
+                <Link 
+                  className="post-header__name-link" 
+                  to={`/users/${post.forename + post.surname}`} 
+                  onClick={
+                    setProfile(post.forename + " " + post.surname)
+                  }
+                >
                   {post.forename + " " + post.surname}
                 </Link>
               </h4>
@@ -36,7 +48,7 @@ const ContentFeed = ({ setProfile }) => {
               ))} */}
             {/* } */}
           </div>
-          <ImageAccordion images={post.image} />
+          <ImageCarousel images={post.image} />
         </div>
       ))}
     </div>

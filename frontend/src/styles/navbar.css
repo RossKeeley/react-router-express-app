@@ -26,24 +26,6 @@
   color: #ffffff;
 }
 
-.navbar__searchbar-container {
-  display: flex;
-  align-items: center;
-  width: 300px;
-  box-sizing: border-box;
-}
-
-.navbar__searchbar {
-  height: 30px;
-  width: 300px;
-}
-
-.navbar__searchbar,
-.navbar__searchbar:focus {
-  outline: none;
-  border: none;
-}
-
 .navbar__list {
   display: flex;
   align-items: center;

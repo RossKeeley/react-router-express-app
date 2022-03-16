@@ -37,14 +37,14 @@
 
 .searchbar__button::after {
   content: "";
-  top: 3px;
+  top: 0px;
   right: 1px;
   display: inline-block;
-  width: 0.4em;
-  height: 0.4em;
-  border: 0.1em solid #656565c6;
+  width: 0.5em;
+  height: 0.5em;
+  border: 0.14em solid #656565c6;
   position: relative;
-  border-radius: 0.35em;
+  border-radius: 0.5em;
 }
 
 .searchbar__button::before
@@ -52,12 +52,13 @@
  content: "";
  display: inline-block;
  position: absolute;
- top: 18px;
- right: 8px;
+ top: 20px;
+ right: 7px;
  border-width: 0;
  background: #656565c6;
- width: 0.35em;
+ width: 0.5em;
  height: 0.08em;
+ transform: rotate(45deg);
  -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
      -ms-transform: rotate(45deg);
